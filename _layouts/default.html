@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}PulseDB</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <style>
+    :root {
+      --bg: #ffffff; --text: #172b4d; --muted: #5e6c84; --line: #dfe1e6;
+      --accent: #0b6e4f; --accent-soft: #e3f4ee; --code: #f4f5f7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1d2125; --text: #dee4ea; --muted: #9fadbc; --line: #384148;
+              --accent: #4bce97; --accent-soft: #1c3329; --code: #282e33; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+           font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    header { border-bottom: 1px solid var(--line); }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+    .bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 16px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--text); text-decoration: none; }
+    .brand svg { width: 28px; height: 28px; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+    nav a:hover, nav a.on { color: var(--accent); }
+    main { padding: 32px 0 64px; }
+    h1 { font-size: 32px; line-height: 1.25; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin-top: 40px; padding-top: 8px; border-top: 1px solid var(--line); }
+    h3 { font-size: 18px; margin-top: 28px; }
+    a { color: var(--accent); }
+    code { background: var(--code); padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+    th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; }
+    .lede { font-size: 19px; color: var(--muted); margin-top: 0; }
+    .note { background: var(--accent-soft); border-left: 4px solid var(--accent); padding: 12px 16px; border-radius: 4px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; padding: 24px 0; }
+    footer a { color: var(--muted); margin-right: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0b6e4f"/><rect x="7" y="17" width="4" height="8" rx="1" fill="#fff"/><rect x="14" y="11" width="4" height="14" rx="1" fill="#fff"/><rect x="21" y="7" width="4" height="18" rx="1" fill="#9fe6c4"/></svg>
+        PulseDB
+      </a>
+      <nav>
+        <a href="{{ '/user-guide/' | relative_url }}" {% if page.url == '/user-guide/' %}class="on"{% endif %}>User guide</a>
+        <a href="{{ '/security/' | relative_url }}" {% if page.url == '/security/' %}class="on"{% endif %}>Data &amp; security</a>
+        <a href="{{ '/privacy/' | relative_url }}" {% if page.url == '/privacy/' %}class="on"{% endif %}>Privacy</a>
+        <a href="{{ '/support/' | relative_url }}" {% if page.url == '/support/' %}class="on"{% endif %}>Support</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {{ content }}
+  </main>
+  <footer>
+    <div class="wrap">
+      <a href="{{ '/privacy/' | relative_url }}">Privacy policy</a>
+      <a href="{{ '/terms/' | relative_url }}">Provider-specific terms</a>
+      <a href="{{ '/support/' | relative_url }}">Support</a>
+      <span>© 2026 Sentire Labs LLC. PulseDB is not made or endorsed by Atlassian.</span>
+    </div>
+  </footer>
+</body>
+</html>

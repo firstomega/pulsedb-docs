@@ -1,0 +1,7 @@
+title: PulseDB
+description: Charts and KPI cards for Confluence Databases, by Sentire Labs.
+baseurl: /pulsedb-docs
+url: https://firstomega.github.io
+markdown: kramdown
+exclude:
+  - README.md
