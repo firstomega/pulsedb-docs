@@ -2,14 +2,14 @@
 layout: default
 title: Provider-specific terms
 permalink: /terms/
-description: Sentire Labs provider-specific terms for PulseDB, supplementing the Atlassian standard end user agreement.
+description: Sentire Labs provider-specific terms for PulseDB, supplementing the Bonterms Standard End User Agreement used on the Atlassian Marketplace.
 ---
 
 # Provider-specific terms
 
 <p class="meta">Effective date: November 17, 2026</p>
 
-PulseDB is provided by **Sentire Labs LLC**, a New Jersey limited liability company ("Sentire Labs"). Your use of PulseDB is governed by the **Atlassian Marketplace standard end user agreement** presented on PulseDB's Marketplace listing and during installation, together with these provider-specific terms. If the two conflict, the standard agreement controls, except where it allows these terms to apply.
+PulseDB is provided by **Sentire Labs LLC**, a New Jersey limited liability company ("Sentire Labs"). Your use of PulseDB is governed by the **Bonterms Standard End User Agreement** (the standard agreement Atlassian offers for Marketplace apps) presented on PulseDB's Marketplace listing and during installation, together with these provider-specific terms. If the two conflict, the standard agreement controls, except where it allows these terms to apply.
 
 ## 1. Provider
 
