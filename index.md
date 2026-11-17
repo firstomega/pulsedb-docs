@@ -11,7 +11,7 @@ Confluence Databases are a great place to track budgets, roadmaps, and requests.
 
 ## What it does
 
-| | |
+| Feature | What it means |
 |---|---|
 | **Six visual types** | KPI summary card, bar, horizontal bar, donut, pie, and line charts |
 | **Real calculations** | Count rows, or sum, average, minimum, or maximum any number column |
